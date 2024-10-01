@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tapis en tufting par Rodaina Bokal - Designs uniques et personnalisés">
+    <title>Tapis Tufting - Rodaina Bokal</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Tapis Tufting</div>
+            <ul class="nav-links">
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#about">À Propos</a></li>
+                <li><a href="#gallery">Galerie</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Bienvenue sur mon site de tapis tufting</h1>
+            <p>Découvrez des designs uniques et personnalisés pour chaque intérieur.</p>
+            <a href="#gallery" class="cta-btn">Voir les Tapis</a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="about-content">
+            <h2>À Propos</h2>
+            <p>Passionnée par l'art du tufting, chaque tapis est créé avec soin et attention aux détails. Que vous cherchiez un tapis moderne, abstrait, ou classique, je propose des pièces qui reflètent votre style et apportent une touche d'originalité à votre espace.</p>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <h2>Galerie</h2>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="tapis.jpg" style="width:100%">
+            </div>
+            <!-- Ajoutez d'autres diapositives ici avec des images de vos tapis -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <!-- Ajoutez plus de points si vous avez plus d'images -->
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <form action="https://formspree.io/f/yourformid" method="POST">
+            <input type="text" name="name" placeholder="Votre nom" required>
+            <input type="email" name="email" placeholder="Votre email" required>
+            <textarea name="message" placeholder="Votre message" required></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Rodaina Bokal - Tous droits réservés</p>
+            <p>Suivez-moi : <a href="#">Instagram</a> | <a href="#">Facebook</a> | <a href="#">LinkedIn</a></p>
+        </div>
+    </footer>
+</body>
+</html>
